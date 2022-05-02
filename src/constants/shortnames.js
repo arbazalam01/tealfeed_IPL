@@ -63,3 +63,10 @@ export const IPLTEAMS = [
     icon: "https://ssl.gstatic.com/onebox/media/sports/logos/G9q07ZXPVbPkXOagStz3Yw_48x48.png",
   },
 ];
+
+export const SearchTeam = IPLTEAMS.map((team) => {
+  return {
+    value: team.team,
+    label: team.shortName,
+  };
+});

@@ -8,8 +8,15 @@ const IplRow = ({ team, idx }) => {
   console.log(totalMatch, win, loose, points, lastFive);
   return (
     <TableRow>
-      <TableCell>
-        {idx + 1} {team.shortName}
+      <TableCell
+        style={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <span>{idx + 1}</span>
+        <img src={team.icon} alt="teamImg" width={24} height={24} />
+        <span>{team.team}</span>
       </TableCell>
       <TableCell>{totalMatch}</TableCell>
       <TableCell>{win}</TableCell>

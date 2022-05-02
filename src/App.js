@@ -9,7 +9,9 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      {item === 0 ? <Matches /> : <IplTable />}
+      <div style={{ marginTop: "20px" }}>
+        {item === 0 ? <Matches /> : <IplTable />}
+      </div>
     </div>
   );
 };
